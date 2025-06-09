@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chyvic</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" href="images/cpik.jpg">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="logo-text">Chyvic</span>
+                    <span class="logo-icon">🦈</span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Beranda</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                    <li><a href="#skills" class="nav-link">Keahlian</a></li>
+                    <li><a href="#contact" class="nav-link">Kontak</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Halo, Aku <span class="gradient-text">Chyra</span>
+                    <span class="wave">👋</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Its your cutie girl~ Selalu tersenyum manis dan dapat memikat hati... kamu! ✨
+                </p>
+                <div class="hero-buttons">
+                    <a href="#gallery" class="btn btn-primary">
+                        <i class="fas fa-user"></i>
+                        Tentang Chyra
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-heart "></i>
+                        Sosmed Chyra
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <img src="images/ppcira.jpg" alt="Foto Profil" class="profile-img">
+                    <div class="profile-decoration">
+                        <div class="decoration-circle circle-1"></div>
+                        <div class="decoration-circle circle-2"></div>
+                        <div class="decoration-circle circle-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about" class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+    <!-- About Section -->
+    <!-- <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tentang Saya</h2>
+                <p class="section-subtitle">Mari berkenalan lebih dekat! 🌟</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Passion Saya</h3>
+                        <p>
+                            Saya adalah seseorang yang sangat mencintai teknologi dan seni. 
+                            Setiap hari saya berusaha untuk belajar hal-hal baru dan berbagi 
+                            kebaikan dengan orang-orang di sekitar saya.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Filosofi Hidup</h3>
+                        <p>
+                            "Hidup ini seperti kanvas kosong, dan kita adalah seniman yang 
+                            bisa melukisnya dengan warna-warna indah." Saya percaya bahwa 
+                            setiap momen adalah kesempatan untuk menciptakan sesuatu yang luar biasa.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Goals & Dreams</h3>
+                        <p>
+                            Saya bermimpi untuk menciptakan dampak positif melalui karya-karya 
+                            yang saya buat. Baik itu dalam bentuk teknologi, seni, atau 
+                            sekadar senyuman untuk orang lain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Photo Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galeri Foto</h2>
+                <p class="section-subtitle">Sedikit foto dari Chyra 📸</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="lifestyle">
+                    <img src="images/cirak.jpg" alt="foto cira" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <button class="gallery-btn" onclick="openModal('images/cirak.jpg')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="lifestyle">
+                    <img src="images/cirann.jpg" alt="foto cira" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <button class="gallery-btn" onclick="openModal('images/cirann.jpg')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="hobby">
+                    <img src="images/ciraq.jpg" alt="foto cira" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <button class="gallery-btn" onclick="openModal('images/ciraq.jpg')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="travel">
+                    <img src="images/ciraa.jpg" alt="foto cira" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <button class="gallery-btn" onclick="openModal('images/ciraa.jpg')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="work">
+                    <img src="images/ciraz.jpg" alt="foto cira" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <button class="gallery-btn" onclick="openModal('images/ciraz.jpg')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="lifestyle">
+                    <img src="images/ciras.jpg" alt="foto cira" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <button class="gallery-btn" onclick="openModal('images/ciras.jpg')">
+                                <i class="fas fa-search-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Keahlian & Minat</h2>
+                <p class="section-subtitle">Hal-hal yang Cyhra kuasai dan sukai 💫</p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <!-- <i class="fas fa-code"></i> -->
+                        
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">😴</div>
+                            <h4>Turu</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="110"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🧵</div>
+                            <h4>Merajut</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="100"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">🎤🎶</div>
+                            <h4>Bernyanyi dan Menari</h4>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-palette"></i>
+                        Hobi & Minat
+                    </h3>
+                    <div class="hobbies-grid">
+                        <div class="hobby-item">
+                            <div class="hobby-icon">📚</div>
+                            <h4>Membaca</h4>
+                            <p>Sci-fi, Self-development</p>
+                        </div>
+                        
+                        <div class="hobby-item">
+                            <div class="hobby-icon">🎵</div>
+                            <h4>Musik</h4>
+                            <p>Jazz, Lo-fi, Classical</p>
+                        </div>
+                        
+                        <div class="hobby-item">
+                            <div class="hobby-icon">📸</div>
+                            <h4>Fotografi</h4>
+                            <p>Landscape, Portrait</p>
+                        </div>
+                        
+                        <div class="hobby-item">
+                            <div class="hobby-icon">✈️</div>
+                            <h4>Traveling</h4>
+                            <p>Explore new places</p>
+                        </div>
+                        
+                        <div class="hobby-item">
+                            <div class="hobby-icon">☕</div>
+                            <h4>Coffee</h4>
+                            <p>Specialty coffee lover</p>
+                        </div>
+                        
+                        <div class="hobby-item">
+                            <div class="hobby-icon">🎮</div>
+                            <h4>Gaming</h4>
+                            <p>Strategy, Adventure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mari Terhubung!</h2>
+                <p class="section-subtitle">Aku senang berkenalan dengan </p>
+                <p class="section-subtitle">orang-orang baru 🤝</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-twitter"></i>
+                        </div>
+                        <h4>X</h4>
+                        <p>@chyrrawr</p>
+                        <a href="https://x.com/chyrraawr?t=Q1MPmp0AZXC1aPgpOYx43A&s=09" class="contact-link">
+                            Follow X <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4>Channel WhatsApp</h4>
+                        <p>ciraaaa💓</p>
+                        <a href="https://whatsapp.com/channel/0029Vakby3J1iUxWwOpRVR0s" class="contact-link">
+                            Channel WhatsApp <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h4>Instagram</h4>
+                        <p>@atx.chyra</p>
+                        <a href="https://instagram.com/alex_johnson" class="contact-link">
+                            Follow Instagram <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- <div class="contact-form-container">
+                    <div class="contact-form-header">
+                        <h3>Kirim Pesan</h3>
+                        <p>Punya ide menarik? Mari diskusi! ✨</p>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subjek</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subjek pesan" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" placeholder="Tulis pesan Anda di sini..." rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <span class="logo-text">Chyvic</span>
+                        <span class="logo-icon">✨</span>
+                    </div>
+                    <p class="footer-desc">
+                        Terima kasih telah mengunjungi website Chyvic! 
+                        Terus dukung Chyra & Andthrixs ya! 🌟
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/atx.chyra/" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029Vakby3J1iUxWwOpRVR0s" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://x.com/chyrraawr?t=Q1MPmp0AZXC1aPgpOYx43A&s=09" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#skills">Keahlian</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chyvic.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Photo Modal -->
+    <div id="photoModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Photo">
+            <div class="modal-nav">
+                <button class="modal-prev" onclick="prevImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="modal-next" onclick="nextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</script>
+</body>
+</html>
